@@ -73,8 +73,8 @@ template<class T>
 GenStack<T>::~GenStack(){ // destructor
   ListNode<T> * curr = front;
   while(curr != NULL){
-    ListNode<T> * temp = current;
-    current = current -> next;
+    ListNode<T> * temp = curr;
+    curr = curr -> next;
     delete temp;
   }
 }
